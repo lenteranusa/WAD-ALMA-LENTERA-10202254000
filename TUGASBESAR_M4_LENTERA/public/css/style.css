@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #3368A0;
+    color: #F2EFE7;
+    margin: 0;
+    padding: 0 0 32px;
+}
+.page { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+h1 { color: #C8DFDB; font-size: 26px; margin: 0 0 20px; text-align: center; }
+h2 { color: #C8DFDB; font-size: 18px; margin: 0 0 14px; }
+p.intro { text-align: center; margin: 0 0 24px; font-size: 15px; }
+
+.card {
+    background: #66A3BF;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+.card > a {
+    display: block;
+    padding: 14px 0;
+    border-bottom: 1px solid #3368A0;
+    color: #F2EFE7;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+.card > a:last-child { border-bottom: none; }
+.card > a:hover { color: #C8DFDB; }
+
+.add-form { display: flex; flex-wrap: wrap; gap: 10px; }
+.add-form input, .add-form select { flex: 1; min-width: 120px; }
+.add-form button { flex: none; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th { background: #1c2b4a; color: #F2EFE7; text-align: left; padding: 10px; font-size: 14px; }
+td { padding: 10px; border: 1px solid #66A3BF; color: #1c2b4a; font-size: 14px; }
+
+select, input[type="text"], input[type="number"] {
+    font-size: 14px;
+    padding: 6px 8px;
+    border: 1px solid #3368A0;
+    border-radius: 6px;
+    background: #fff;
+    color: #1c2b4a;
+}
+button {
+    padding: 6px 12px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #F2EFE7;
+    font-weight: bold;
+    background: #1c2b4a;
+}
+button[name="delete"] { background: #A0333F; }
+button:hover { opacity: 0.85; }
+
+header { background: #1c2b4a; color: #C8DFDB; padding: 16px 24px; margin-bottom: 24px; text-align: center; }
+header .brand { font-size: 20px; font-weight: bold; margin: 0 0 10px; }
+header nav a { color: #C8DFDB; text-decoration: none; margin-right: 18px; font-size: 14px; }
+header nav a:hover { text-decoration: underline; }
+header nav a.active { font-weight: bold; text-decoration: underline; }
